@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocochi Asian Cuisine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <div class="logo">Cocochi</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#order-online">Order Online</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero">
+      <h1>Cocochi Asian Cuisine</h1>
+      <p>Sushi | Hibachi | Chinese Takout</p>
+      <a href="#menu" class="btn">View Menu</a>
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  <section class="hero-image">
+    <div class="container">
+      <img src="#" alt="Sushi platter">
+    </div>
+  </section>
+
+  <!-- "About Us" -->
+  <section class="About Us">
+    <div class="container">
+      <h2 class="section-title">Our Story</h2>
+      <div class="story-grid">
+        <div class="story-card">
+          <img src="#" alt="Father">
+          <h3>Kai</h3>
+        </div>
+        <div class="story-card">
+          <img src="#" alt="Mother">
+          <h3>Duan</h3>
+        </div>
+        <div class="story-card">
+          <img src="#" alt="children">
+          <h3>Karina, Dominic, & Heng</h3>
+        </div>
+      </div>
+      <div class="story-text">
+        <p>We are a family owned and run restaurant that has been in business for nearly two decades. We strive to serve
+          our community and we're grateful for the loyal customers who have made us part of their regular routine. We
+          always look forward to serving you!</p>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="#">Image1</div>
+          <div class="gallery-item"><img src="#">Image2</div>
+          <div class="gallery-item"><img src="#">Image3</div>
+          <div class="gallery-item"><img src="#">Image4</div>
+          <div class="gallery-item"><img src="#">Image5</div>
+          <div class="gallery-item"><img src="#">Image6</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+
+        <!-- Menu Content Display -->
+        <div class="menu-display">
+          <div id="menu-items-container">
+            <p>Please select a menu category from the dropdown below.</p>
+          </div>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button id="dropdownButton" onclick="toggleDropdown()">Choose a Category</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <div id="dropdownContent" class="dropdown-content">
+              <a href="#" onclick="selectCategory('appetizers', 'Appetizers')">Appetizers</a>
+              <a href="#" onclick="selectCategory('soup-salad', 'Soup & Salad')">Soup & Salad</a>
+              <a href="#" onclick="selectCategory('yaki-soba', 'Yaki Soba')">Yaki Soba</a>
+              <a href="#" onclick="selectCategory('fried-rice', 'Fried Rice')">Fried Rice</a>
+              <a href="#" onclick="selectCategory('kitchen-special', 'Kitchen Special')">Kitchen Special</a>
+              <a href="#" onclick="selectCategory('hibachi', 'Hibachi Dinner')">Hibachi Dinner</a>
+              <a href="#" onclick="selectCategory('sushi-sashimi', 'Sushi/Sashimi')">Sushi/Sashimi</a>
+              <a href="#" onclick="selectCategory('sushi-rolls', 'Sushi Rolls')">Sushi Rolls</a>
+              <a href="#" onclick="selectCategory('special-rolls', 'Special Rolls')">Special Rolls</a>
+              <a href="#" onclick="selectCategory('sushi-bar-entree', 'Sushi Bar Entrée')">Sushi Bar Entrée</a>
+              <a href="#" onclick="selectCategory('bento', 'Bento Special')">Bento Special</a>
+              <a href="#" onclick="selectCategory('happy-meal', 'Happy Meal')">Happy Meal</a>
+              <a href="#" onclick="selectCategory('lunch-specials', 'Lunch Specials')">Lunch Specials</a>
+              <a href="#" onclick="selectCategory('desserts', 'Desserts')">Desserts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title">Reviews</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-info">
+              <p>Review</p>
+            </div>
+            <div class="review-rating">Rating</div>
+            <div class="reviewer">
+              <h4>Reviewer</h4>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-info">
+              <p>Review</p>
+            </div>
+            <div class="review-rating">Rating</div>
+            <div class="reviewer">
+              <h4>Reviewer</h4>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="review-info">
+              <p>Review</p>
+            </div>
+            <div class="review-rating">Rating</div>
+            <div class="reviewer">
+              <h4>Reviewer</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us">
+      <div class="container">
+        <h2 class="section-title">Ready to Place Your Order? Call Us!</h2>
+        <div class="call-action">
+          <a href="tel:413-786-2777" class="btn">(413) 786 - 2777</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h2>Cocochi Asian Cuisine</h2>
+            <p>Family Run Restaurant</p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/CocochiAsianCuisine/" target="_blank"
+                rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.yelp.com/biz/cocochi-asian-cuisine-feeding-hills?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+                target="_blank" rel="noopener noreferrer">Yelp</a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <h3>OPEN HOURS</h3>
+            <div class="hours">
+              <div class="hours-row">
+                <span class="day">Monday</span>
+                <span class="time">Closed</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Tuesday</span>
+                <span class="time">11:00 AM - 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Wednesday</span>
+                <span class="time">11:00 AM - 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Thursday</span>
+                <span class="time">11:00 AM - 9:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Friday</span>
+                <span class="time">11:00 AM - 10:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Saturday</span>
+                <span class="time">12:00 PM - 10:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Sunday</span>
+                <span class="time">12:00 PM - 9:00 PM</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <h3>FIND US</h3>
+            <p>760 Springfield St, Feeding Hills, MA 01030</p>
+            <div class="map-placeholder">
+              [Map Location]
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>

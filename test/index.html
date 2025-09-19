@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cocochi Asian Cuisine</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
@@ -79,20 +80,33 @@
     </section>
 
     <!-- Menu -->
-    <section class="menu" id="menu">
+    <section class="menu-section" id="menu">
       <div class="container">
         <h2 class="section-title">Menu</h2>
-        <div class="menu-grid">
-          <ol>
-            <li>item1</li>
-            <li>item2</li>
-          </ol>
+
+        <!-- Menu Content Display -->
+        <div class="menu-display">
+          <div id="menu-items-container">
+            <p>Please select a menu category from the dropdown below.</p>
+          </div>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+          <button id="dropdownButton">Choose a Category</button>
+          <div id="dropdownContent" class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
         </div>
       </div>
+
     </section>
+    <script src="script.js"></script>
 
     <!-- Reviews -->
-    <section class="reviews" id="reviews">
+    <!-- <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="section-title">Reviews</h2>
         <div class="reviews-grid">
@@ -125,10 +139,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact Us -->
-    <section class="contact-us">
+    <!-- <section class="contact-us">
       <div class="container">
         <h2 class="section-title">Ready to Place Your Order? Call Us!</h2>
         <div class="call-action">
@@ -136,18 +150,20 @@
         </div>
       </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="footer-section" id="contact">
+    <!-- <footer class="footer-section" id="contact">
       <div class="container">
         <div class="footer-content">
           <div class="footer-left">
             <h2>Cocochi Asian Cuisine</h2>
             <p>Family Run Restaurant</p>
             <div class="social-links">
-              <a href="#" target="_blank">Facebook</a>
-              <a href="#" target="_blank">Yelp</a>
+              <a href="https://www.facebook.com/CocochiAsianCuisine/" target="_blank"
+                rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.yelp.com/biz/cocochi-asian-cuisine-feeding-hills?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+                target="_blank" rel="noopener noreferrer">Yelp</a>
             </div>
           </div>
           <div class="footer-center">
@@ -192,7 +208,8 @@
           </div>
         </div>
       </div>
-    </footer>
-    
+    </footer> -->
+
 </body>
+
 </html>
