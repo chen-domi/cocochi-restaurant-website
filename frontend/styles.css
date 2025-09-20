@@ -294,7 +294,7 @@ header .container {
 
 .menu-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 12px;
   border-bottom: 1px solid rgba(0,0,0,0.04);
@@ -310,6 +310,17 @@ header .container {
   margin-right: 12px;
   color: #666;
   font-weight: 600;
+}
+
+.menu-item .item-info {
+  /* keep item name left-aligned next to the number */
+  text-align: left;
+}
+
+.menu-item .price {
+  margin-left: auto;
+  color: #111;
+  font-weight: 700;
 }
 
 .dropdown {

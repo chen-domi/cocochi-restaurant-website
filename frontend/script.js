@@ -35,9 +35,16 @@ function displayMenuItems(items) {
             <div class="item-info">
                 <h4>${item.itemName}</h4>
             </div>
-            <span class="price">$${item.price}</span>
+            <span class="price">$${formatPrice(item.price)}</span>
         </div>
     `).join('');
+}
+
+// Helper to safely format a price to two decimal places
+function formatPrice(price) {
+    const num = Number(price);
+    if (Number.isNaN(num)) return '';
+    return num.toFixed(2);
 }
 
 // Function to toggle dropdown visibility
