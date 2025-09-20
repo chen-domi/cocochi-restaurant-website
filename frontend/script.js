@@ -29,8 +29,9 @@ function displayMenuItems(items) {
         return;
     }
     
-    container.innerHTML = items.map(item => `
+    container.innerHTML = items.map((item, idx) => `
         <div class="menu-item">
+            <span class="item-number">${idx + 1}.</span>
             <div class="item-info">
                 <h4>${item.itemName}</h4>
             </div>

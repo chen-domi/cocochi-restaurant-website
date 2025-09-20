@@ -13,7 +13,7 @@
   <!-- Header -->
   <header>
     <nav class="container">
-      <div class="logo">Cocochi</div>
+      <div class="logo">C</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
@@ -40,7 +40,7 @@
   </section>
 
   <!-- "About Us" -->
-  <section class="about-us-section">
+  <section class="about-us-section" id="about">
     <div class="container">
       <h2 class="section-title">Our Story</h2>
       <div class="story-grid">
@@ -71,12 +71,10 @@
       <div class="container">
         <h2 class="section-title">Gallery</h2>
         <div class="gallery-grid">
-          <div class="gallery-item"><img src="#">Image1</div>
-          <div class="gallery-item"><img src="#">Image2</div>
-          <div class="gallery-item"><img src="#">Image3</div>
-          <div class="gallery-item"><img src="#">Image4</div>
-          <div class="gallery-item"><img src="#">Image5</div>
-          <div class="gallery-item"><img src="#">Image6</div>
+          <div class="gallery-item"><img src="/frontend/img/general-tso.jpg">General Tso Chicken</div>
+          <div class="gallery-item"><img src="/frontend//img/wonton.jpg">Wonton Soup</div>
+          <div class="gallery-item"><img src="/frontend/img//sushi.jpg">Vegetable Roll</div>
+          <div class="gallery-item"><img src="/frontend/img/hibachi.jpg">Hibachi</div>
         </div>
       </div>
     </section>
@@ -97,22 +95,20 @@
         <div class="dropdown">
           <button id="dropdownButton" onclick="toggleDropdown()">Choose a Category</button>
           <div id="dropdownContent" class="dropdown-content">
-            <div id="dropdownContent" class="dropdown-content">
-              <a href="#" onclick="selectCategory('appetizers', 'Appetizers')">Appetizers</a>
-              <a href="#" onclick="selectCategory('soup-salad', 'Soup & Salad')">Soup & Salad</a>
-              <a href="#" onclick="selectCategory('yaki-soba', 'Yaki Soba')">Yaki Soba</a>
-              <a href="#" onclick="selectCategory('fried-rice', 'Fried Rice')">Fried Rice</a>
-              <a href="#" onclick="selectCategory('kitchen-special', 'Kitchen Special')">Kitchen Special</a>
-              <a href="#" onclick="selectCategory('hibachi', 'Hibachi Dinner')">Hibachi Dinner</a>
-              <a href="#" onclick="selectCategory('sushi-sashimi', 'Sushi/Sashimi')">Sushi/Sashimi</a>
-              <a href="#" onclick="selectCategory('sushi-rolls', 'Sushi Rolls')">Sushi Rolls</a>
-              <a href="#" onclick="selectCategory('special-rolls', 'Special Rolls')">Special Rolls</a>
-              <a href="#" onclick="selectCategory('sushi-bar-entree', 'Sushi Bar Entrée')">Sushi Bar Entrée</a>
-              <a href="#" onclick="selectCategory('bento', 'Bento Special')">Bento Special</a>
-              <a href="#" onclick="selectCategory('happy-meal', 'Happy Meal')">Happy Meal</a>
-              <a href="#" onclick="selectCategory('lunch-specials', 'Lunch Specials')">Lunch Specials</a>
-              <a href="#" onclick="selectCategory('desserts', 'Desserts')">Desserts</a>
-            </div>
+              <a href="#" onclick="selectCategory('appetizers', 'Appetizers'); return false;">Appetizers</a>
+              <a href="#" onclick="selectCategory('soup-salad', 'Soup & Salad'); return false;">Soup & Salad</a>
+              <a href="#" onclick="selectCategory('yaki-soba', 'Yaki Soba'); return false;">Yaki Soba</a>
+              <a href="#" onclick="selectCategory('fried-rice', 'Fried Rice'); return false;">Fried Rice</a>
+              <a href="#" onclick="selectCategory('kitchen-special', 'Kitchen Special'); return false;">Kitchen Special</a>
+              <a href="#" onclick="selectCategory('hibachi', 'Hibachi Dinner'); return false;">Hibachi Dinner</a>
+              <a href="#" onclick="selectCategory('sushi-sashimi', 'Sushi/Sashimi'); return false;">Sushi/Sashimi</a>
+              <a href="#" onclick="selectCategory('sushi-rolls', 'Sushi Rolls'); return false;">Sushi Rolls</a>
+              <a href="#" onclick="selectCategory('special-rolls', 'Special Rolls'); return false;">Special Rolls</a>
+              <a href="#" onclick="selectCategory('sushi-bar-entree', 'Sushi Bar Entrée'); return false;">Sushi Bar Entrée</a>
+              <a href="#" onclick="selectCategory('bento', 'Bento Special'); return false;">Bento Special</a>
+              <a href="#" onclick="selectCategory('happy-meal', 'Happy Meal'); return false;">Happy Meal</a>
+              <a href="#" onclick="selectCategory('lunch-specials', 'Lunch Specials'); return false;">Lunch Specials</a>
+              <a href="#" onclick="selectCategory('desserts', 'Desserts'); return false;">Desserts</a>
           </div>
         </div>
       </div>
