@@ -1,8 +1,45 @@
-import { useState } from 'react';
-import { menuData, type MenuCategory } from '../data/menu';
+import { useState, useEffect } from 'react';
+import type { MenuCategory } from '../data/menu';
 
 export default function Menu() {
-  const [activeCategory, setActiveCategory] = useState<MenuCategory>(menuData[0]);
+  const [categories, setCategories] = useState<MenuCategory[]>([]);
+  const [activeCategory, setActiveCategory] = useState<MenuCategory | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch('/api/categories')
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json() as Promise<MenuCategory[]>;
+      })
+      .then((data) => {
+        setCategories(data);
+        setActiveCategory(data[0] ?? null);
+      })
+      .catch((err: unknown) => {
+        setError(err instanceof Error ? err.message : 'Failed to load menu');
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) {
+    return (
+      <section id="menu" className="py-24 px-6 bg-gray-50 text-center text-gray-500">
+        Loading menu…
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="menu" className="py-24 px-6 bg-gray-50 text-center text-red-500">
+        Unable to load menu. Please try again later.
+      </section>
+    );
+  }
+
+  if (!activeCategory) return null;
 
   return (
     <section id="menu" className="py-24 px-6 bg-gray-50">
@@ -21,7 +58,7 @@ export default function Menu() {
         {/* Category tabs — horizontally scrollable on mobile */}
         <div className="overflow-x-auto pb-2 mb-10">
           <div className="flex gap-2 min-w-max mx-auto justify-start md:justify-center flex-wrap md:flex-nowrap">
-            {menuData.map((cat) => (
+            {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat)}
